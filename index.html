@@ -1,0 +1,33 @@
+ <html>
+    <head>
+      <title>Semantic UI</title>
+      <script type="text/javascript">
+        function changeImg(imgNumber) {
+          var myImages = [
+            "https://images.unsplash.com/photo-1619432595081-732aadeea03a?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8eEh4WVRNSExnT2N8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "https://download.unsplash.com/photo-1428278953961-a8bc45e05f72",
+            "https://download.unsplash.com/photo-1429277005502-eed8e872fe52"
+          ];
+          var imgShown = document.body.style.backgroundImage;
+          var newImgNumber = Math.floor(Math.random() * myImages.length);
+          document.body.style.backgroundImage =
+            "url(" + myImages[newImgNumber] + ")";
+        }
+        window.onload = changeImg;
+      </script>
+      <style type="text/css">
+        .bg {
+          height: 50%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+        }
+      </style>
+    </head>
+    <body class="bg">
+      <h1>I am Siraj</h1>
+      <p>And I'm a BackEnd Developer</p>
+      <button>Plz Hire me</button>
+    </body>
+  </html> 
