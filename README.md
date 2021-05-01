@@ -1,4 +1,4 @@
-##Assignment
+# Assignment
 
 Steps to run 
 - Clone repository and click index.html file 
